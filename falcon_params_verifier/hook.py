@@ -19,6 +19,6 @@ class ParamVerifier(object):
 
     def __call__(self, req, resp, resource, params):
         if self.__verify_params(request_object=req) == False:
-            raise falcon.HTTPBadRequest(
+            raise falcon.HTTPBadRequest(  # pylint: disable=no-member
                 description="A required parameter has not been supplied."
-            )  # pylint: disable=no-member
+            )
