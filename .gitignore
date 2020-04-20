@@ -2,3 +2,5 @@ venv/*
 *.pyc
 .vscode/*
 test.py
+build/*
+falcon_params_verifier.egg-info/*
