@@ -1,5 +1,7 @@
 # Falcon Query Parameter Verifier
 
+![Test Python Module](https://github.com/ms7m/falcon-params-verifer/workflows/Test%20Python%20Module/badge.svg?branch=master) ![PyPi Shield](https://img.shields.io/badge/Available-on%20PyPi-blue?logoColor=white&logo=Python)
+
 A simple falcon hook to check if a request contains all required query parameters.
 
 ***
@@ -11,7 +13,7 @@ Installation:
 **PyPi**
 
 ```
-pip install falcon_params_verifier
+pip install falcon-params-verifier
 ```
 
 **.whl**
