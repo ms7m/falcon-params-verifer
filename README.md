@@ -30,12 +30,8 @@ import falcon_params_verifier
 from falcon_params_verifier import ParamVerifier # This can also be used.
 
 class SampleResource(object):
-    def __init__(self):
-        self._required_params = [
-            "userId",
-        ]
     # Add the hook
-	@falcon.before(falcon_params_verifier.ParamVerifier(self._required_params))
+	@falcon.before(falcon_params_verifier.ParamVerifier(['userId'])
     def on_get(self, req, resp):
         req.media = {
             "message": "Whoo hoo, you made a proper request!"
